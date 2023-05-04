@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5  ">
+    <form class="col-10 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Sign Up</h2>
+        <hr>
+        <div class="form-group mb3 mt-2">
+            <label for="Name">Full Name</label>
+            <input name="applicant_name" type="text" class="form-control" placeholder="Enter Name" required>
+        </div>
+
+        <div class="form-group mb3 mt-3">
+            <label for="Email">Email</label>
+            <input name="applicant_email" type="email" class="form-control" placeholder="Enter Email id" required>
+        </div>
+
+        <div class="form-group mb3 mt-3">
+            <label for="Phoneno">Phone no</label>
+            <input name="applicant_phoneNo" type="number" class="form-control" placeholder="Enter Phone No" required>
+        </div>
+
+        <div class="form-group mb3 mt-3">
+            <label for="Address">Address</label>
+            <input name="applicant_address" type="text" class="form-control" placeholder="Enter Address" required>
+        </div>
+
+        <div class="form-group mb-3 mt-3">
+            <label for="Intro">Short Intro</label>
+            <textarea name="applicant_shortIntro" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group mb-3 mt-3">
+            <label for="Image">Profile Image</label>
+            <input name="applicant_image" type="file" class="form-control">
+        </div>
+
+        <div class="form-group mb-3 mt-3">
+            <label for="resume">Upload Resume</label>
+            <input name="applicant_resume" type="file" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-success">Sign Up</button>
+    </form>
+</div>
+
+{% endblock %}
