@@ -4,7 +4,7 @@
 
 # Job_seeker
 This Website is made for an internship Kudosware company.
-Mainly technology which is used is Djanog.
+Mainly technology which is used is Django.
 
 # Project Overview:
 YourHR is a job search service that aims to help job seekers find the ideal job roles based on
